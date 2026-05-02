@@ -1,0 +1,17 @@
+@import "/css/admin.css";
+
+/* Button */
+.addBtn {
+  background-color: #0a0f2c;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background-color: rgb(21, 88, 246);
+}

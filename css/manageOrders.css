@@ -1,0 +1,13 @@
+@import "/css/admin.css";
+
+/* Empty state card */
+.emptyCard {
+  margin: 40px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid #e2e2e2;
+  background-color: #f8f9fb;
+  color: #5f6c7b;
+  font-size: 18px;
+}

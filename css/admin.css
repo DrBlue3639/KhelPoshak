@@ -110,3 +110,23 @@ body {
   font-size: 26px;
   font-weight: 650;
 }
+
+/* manage section */
+/* Page header layout */
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+}
+
+/* Titles */
+.pageHeader h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.pageHeader p {
+  color: #5f6c7b;
+  font-size: 16px;
+}
