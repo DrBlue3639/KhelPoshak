@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/css/admin.css" />
+    <title>Admin Dashboard Page</title>
+  </head>
+  <body>
+    <!-- admin navigation -->
+    <div class="navContainer">
+      <a href="/index.html">
+        <div class="logo">
+          <img
+            src="/resources/Logo_heart-pulse-solid.png"
+            alt="beatLogo"
+            width="35px"
+          />
+          <div class="logotext">
+            <b>KhelPoshak</b>
+          </div>
+        </div>
+      </a>
+
+      <nav class="navigation">
+        <ul>
+          <li><a href="#" style="color: rgb(21, 88, 246)">Dashboard</a></li>
+          <li><a href="#">Manage Products</a></li>
+          <li><a href="#">Manage Orders</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- main Admin Panel Body  -->
+    <div class="admintop">
+      <h1>Admin Dashboard</h1>
+      <p>welcome</p>
+      <br />
+      <hr />
+    </div>
+    <div class="mainMenu">
+      <div class="manageproducts">
+        <a href="">Manage Products</a>
+      </div>
+      <div class="addProducts">
+        <a href="${pageContext.request.contextPath}/ProdS?action=add"
+          >Add Product</a
+        >
+      </div>
+      <div class="manageOrder">
+        <a href="orders.jsp">Manage Orders</a>
+      </div>
+      <div class="manageUsers">
+        <a href="users.jsp">Manage Users</a>
+      </div>
+    </div>
+  </body>
+</html>

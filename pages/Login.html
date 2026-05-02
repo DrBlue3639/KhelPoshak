@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/Login.css" />
+    <title>Login to blabla</title>
+  </head>
+  <body>
+    <!-- navigation container -->
+    <div class="navContainer">
+      <a href="../index.html">
+        <div class="logo">
+          <img
+            src="../resources/Logo_heart-pulse-solid.png"
+            alt="beatLogo"
+            width="35px"
+          />
+          <div class="logotext">
+            <b>KhelPoshak</b>
+          </div>
+        </div>
+      </a>
+      <nav class="navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li id="Login">
+            <a href="Login.html" style="color: rgb(21, 88, 246)">Login</a>
+          </li>
+          <a href="Register.html"><button>Register</button></a>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="loginContainer">
+      <div class="loginCard">
+        <div class="loginHeader">
+          <a href="admin.html">
+            <img src="/resources/Logo_heart-pulse-solid.png" alt="HeartPulse" />
+          </a>
+          <h3><b>Login to Your Account</b></h3>
+          <p>Enter your credentials to continue</p>
+        </div>
+
+        <form action="login" method="post" class="loginForm">
+          <label>Username / Email</label>
+          <input
+            type="text"
+            placeholder="Enter your email"
+            name="username"
+            required
+          />
+
+          <label>Password</label>
+          <input
+            type="password"
+            placeholder="Enter your password"
+            name="password"
+            required
+          />
+
+          <!-- <label>Select Role</label>
+          <div class="roleSelection">
+            <label>
+              <input type="radio" name="role" value="admin" required />
+              Admin
+            </label>
+            <label>
+              <input type="radio" name="role" value="patient" />
+              Patient
+            </label>
+          </div> -->
+
+          <button type="submit" class="loginBtn">Login</button>
+
+          <p class="registerText">
+            Don't have an account? <a href="Register.html">Register here</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
