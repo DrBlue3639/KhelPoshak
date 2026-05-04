@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/editProduct.css" />
+    <title>Manage Prodcuts</title>
+  </head>
+  <body>
+    <!-- admin navigation -->
+    <div class="navContainer">
+      <a href="/index.html">
+        <div class="logo">
+          <img
+            src="/resources/Logo_heart-pulse-solid.png"
+            alt="beatLogo"
+            width="35px"
+          />
+          <div class="logotext">
+            <b>KhelPoshak</b>
+          </div>
+        </div>
+      </a>
+
+      <nav class="navigation">
+        <ul>
+          <li>
+            <a href="/pages/Admindashboard.html" style="color: rgb(21, 88, 246)"
+              >Dashboard</a
+            >
+          </li>
+          <li><a href="/pages/editProduct.html">Edit Products</a></li>
+          <li><a href="/pages/manageOrders.html">Manage Orders</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- main part -->
+    <div class="pageHeader">
+      <div>
+        <h1>Edit Products</h1>
+        <p>Edit or remove products listings</p>
+      </div>
+
+      <button class="addBtn">+ Add Products</button>
+    </div>
+    <form action="ProdS" method="post">
+      <input type="hidden" name="action" value="update" />
+      <input type="hidden" name="productId" value="${product.productId}" />
+
+      Name:
+      <input type="text" name="name" value="${product.name}" /><br /><br />
+
+      Description:
+      <input
+        type="text"
+        name="description"
+        value="${product.description}"
+      /><br /><br />
+
+      Price:
+      <input type="text" name="price" value="${product.price}" /><br /><br />
+
+      Team:
+      <input type="text" name="team" value="${product.team}" /><br /><br />
+
+      Sport:
+      <input type="text" name="sport" value="${product.sport}" /><br /><br />
+
+      Player:
+      <input
+        type="text"
+        name="playerName"
+        value="${product.playerName}"
+      /><br /><br />
+
+      Category:
+      <input
+        type="hidden"
+        name="categoryId"
+        value="${product.categoryId}"
+      /><br /><br />
+
+      Stock S:
+      <input type="text" name="stockS" value="${product.stockS}" /><br /><br />
+
+      Stock M:
+      <input type="text" name="stockM" value="${product.stockM}" /><br /><br />
+
+      Stock L:
+      <input type="text" name="stockL" value="${product.stockL}" /><br /><br />
+
+      Stock XL:
+      <input
+        type="text"
+        name="stockXl"
+        value="${product.stockXl}"
+      /><br /><br />
+
+      Stock XXL:
+      <input
+        type="text"
+        name="stockXxl"
+        value="${product.stockXxl}"
+      /><br /><br />
+
+      <button type="submit">Update</button>
+    </form>
+    <a href="ProdS?action=list">Back</a>
+  </body>
+</html>
